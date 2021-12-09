@@ -21,13 +21,6 @@ class UltimateTicTacToeSimulator:
             # print action 
             # print 
             state = succ(state, action)
-            # print(state)
-            # print(type(state))
-            # print("type 1: ", type(state[0]))
-            # print("type 1, 1 :", type(state[0][0]))
-            # print("type 2: ", type(state[1]))
-            # print("type 3: ", type(state[2])) 
-            # state[0][0].printGrid()
         util = utility(state)
         #printBoard(state[0])  
         
