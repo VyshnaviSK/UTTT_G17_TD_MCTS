@@ -64,17 +64,8 @@ def rowColFromPos(pos):
     return (row, col)
 
 def randomMax(successors):
-    # newSucc = []
-    # for val in successors:
-    #     if val[0] is not None:
-    #         tup = val
-    #         newSucc.append(tup)
-    # successors = newSucc
-    # if bool(successors)==False:
-    #     return 0
     maximumValue = max(successors)[0] 
-    possibleSuccessors = [successor for successor in successors if successor[0] == maximumValue] 
-    #print("here lies the problem")
+    possibleSuccessors = [successor for successor in successors if successor[0] == maximumValue]
     return random.choice(possibleSuccessors)[1] 
 
 
